@@ -1,0 +1,95 @@
+.myNavbar {
+	background-color: #001842;
+}
+
+.myFooter {
+	background-color: #001842;
+}
+
+
+.breadcrumb li{
+	font-size: 13px;
+	color:gray;
+}
+
+h1{
+	color: rgb(185, 228, 255);
+}
+
+.card {
+	height: 100%;
+}
+
+.banner{
+	background-image: url('../images/homeBanner.avif');
+}
+
+.banner .card-text{
+	background-color: #00184298;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+.profile {
+	display: flex;
+}
+
+.profile .card-body{
+	padding: none;
+}
+
+.profile p{
+	font-size: 13px;
+}
+
+.profile p i{
+	color: rgb(189, 189, 7);
+}
+
+.zoomed-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.carousel-img-container{
+	height: 50vh;
+}
+
+.mask {
+	background-color: rgba(251, 251, 251, 0.15);
+}
+
+.carousel-caption p, h5{
+	color: whitesmoke;
+	display: none;
+	background-color: #00184298;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.myCarousel:hover {
+	.carousel-caption p, h5{
+		display: block;
+	}
+}
+
+
+.zoomed-image-carousel {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.myCarousel img{
+	border-radius: 10px;
+}
