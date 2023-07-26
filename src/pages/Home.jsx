@@ -13,9 +13,10 @@ const Home = () => {
 
 	useEffect(() => {
 		setTimeout(() => {
-		setLoading(false);
+			setLoading(false);
 		}, 2500);
 	}, []);
+
 	return (
 		<>
 			<Breadcrumb  items={breadcrumbs}/>
