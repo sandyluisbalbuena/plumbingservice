@@ -24,9 +24,9 @@ const Home = () => {
 				<div className='col-12 col-lg-8 my-2'>
 					<div className="card banner">
 						<div className="card-body">
-							{/* <div className="card-text">
-								<h1>Home Page</h1>
-							</div> */}
+							<div className="card-text">
+								<h1>Home</h1>
+							</div>
 						</div>
 					</div>
 				</div>

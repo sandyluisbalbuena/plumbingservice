@@ -9,8 +9,7 @@ const Service = () => {
 	const [loading, setLoading] = useState(true);
 	const { service } = useParams();
 	const [services, setServices] = useState([]);
-	const [installation, setInstallation] = useState([]);
-	const [replacement, setReplacement] = useState([]);
+	const [serviceTitle, setServiceTitle] = useState('');
 	const [breadcrumb, setBreadcrumb] = useState([]);
 
 
@@ -20,6 +19,8 @@ const Service = () => {
 				{ text: 'Services', url: '/services' },
 				{ text: 'Declogging', url: '/' },
 			])
+
+			setServiceTitle('Declogging');
 
 			setServices ([
 				{
@@ -54,6 +55,8 @@ const Service = () => {
 				{ text: 'Services', url: '/services' },
 				{ text: 'Installation', url: '/' },
 			])
+
+			setServiceTitle('Installation');
 
 			setServices ([
 				{
@@ -120,6 +123,8 @@ const Service = () => {
 				{ text: 'Replacement', url: '/' },
 			])
 
+			setServiceTitle('Replacement');
+
 			setServices ([
 				{
 					title:'Toilet Bowl',
@@ -167,9 +172,11 @@ const Service = () => {
 		
 			<div className="card banner">
 				<div className="card-body">
-				{/* <div className="card-text">
-					<h1>Home Page</h1>
-				</div> */}
+				<div className="card-text">
+					{serviceTitle && (
+						<h1>{serviceTitle}</h1>
+					)}
+				</div>
 				</div>
 			</div>
 			</div>

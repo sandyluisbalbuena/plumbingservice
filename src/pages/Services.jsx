@@ -46,9 +46,9 @@ const Services = (props) => {
 		
 				<div className="card banner">
 					<div className="card-body">
-					{/* <div className="card-text">
-						<h1>Home Page</h1>
-					</div> */}
+					<div className="card-text">
+						<h1>Services</h1>
+					</div>
 					</div>
 				</div>
 			</div>
